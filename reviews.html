@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отзывы: плакат и ответы — JennyEnglishSchool</title>
+<meta name="description" content="QR-плакат «Оставьте отзыв» и десять шаблонов ответов на хорошие и плохие отзывы.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="materials.css?v=3">
+</head>
+<body>
+
+<div class="doc-bar">
+  <div class="doc-bar__inner">
+    <a href="report/" class="doc-bar__back">← <span>Страница проекта</span></a>
+    <div class="doc-bar__actions">
+      <button class="btn btn--primary" onclick="window.print()">Распечатать плакат</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="doc-hero">
+    <p class="eyebrow">Отзывы</p>
+    <h1>QR-плакат и готовые ответы на отзывы</h1>
+    <p class="doc-hero__lead">Для школы без офиса отзывы на Авито, Profi, в ВК и на картах влияют на выбор сильнее, чем сайт. Плакат упрощает просьбу «оставьте отзыв», а шаблоны экономят время на ответах. Просить отзывы можно у реальных учеников и родителей, покупать или писать их самим нельзя: площадки блокируют такие карточки.</p>
+  </section>
+
+  <section class="doc-section">
+    <h2>1. QR-плакат для печати или отправки</h2>
+    <p class="doc-section__lead">Вставьте ссылку на отзыв там, где вы хотите его получить: на Авито, Profi, в сообществе ВК или на карточке в Яндексе. Откройте страницу, найдите «Оставить отзыв» и скопируйте адрес. Пока ссылки нет, QR показывает ссылку на ваше сообщество в ВК: это только пример, как выглядит плакат. Плакат можно отправлять картинкой в чат с родителями или учениками после занятия.</p>
+    <div class="poster-tools">
+      <input id="reviewUrl" type="url" placeholder="Вставьте ссылку на отзыв" value="https://vk.ru/jennyenglish">
+    </div>
+    <div class="poster">
+      <p class="eyebrow">JennyEnglishSchool · английский онлайн</p>
+      <h2>Понравились занятия? Оставьте отзыв</h2>
+      <p>Наведите камеру телефона на код. Это займёт минуту и поможет другим выбрать педагога.</p>
+      <div class="poster__qr" id="qr"></div>
+      <p class="poster__name">Спасибо, что учитесь с нами!</p>
+    </div>
+  </section>
+
+  <section class="doc-section doc-section--replies">
+    <h2>2. Десять шаблонов ответов на отзывы</h2>
+    <p class="doc-section__lead">Подставляйте имя и деталь из отзыва, чтобы ответ не выглядел шаблонным. Не раскрывайте в ответах подробности занятий, данные ребёнка и оплаты: это личные данные.</p>
+
+    <h3>Положительные</h3>
+    <div class="grid-2">
+      <div class="card"><p>1. «Спасибо, [имя]! Рада, что занятия с [педагогом] подошли. Если понадобится что-то ещё, пишите.»</p></div>
+      <div class="card"><p>2. «[Имя], благодарю за тёплые слова. Для нас главное, чтобы ученику было комфортно говорить. Рада, что это получилось.»</p></div>
+      <div class="card"><p>3. «Спасибо за отзыв! Приятно, что [деталь из отзыва] оказалась для вас важной. Успехов в английском!»</p></div>
+      <div class="card"><p>4. «[Имя], спасибо, что рекомендуете. Для ваших знакомых первый урок бесплатный, без обязательств.»</p></div>
+      <div class="card"><p>5. «Благодарю! Рада, что [ребёнок/вы] с интересом занимаетесь. Хорошего дня и до следующего занятия.»</p></div>
+    </div>
+
+    <h3 style="margin-top:32px">Негативные и спорные</h3>
+    <div class="grid-2">
+      <div class="card"><p>6. «[Имя], сожалею, что осталось неприятное впечатление. Расскажите, пожалуйста, что именно пошло не так, напишите в @evgeniakolesnik. Хочу разобраться и исправить, если ошибка наша.»</p></div>
+      <div class="card"><p>7. «Спасибо за честный отзыв. Если педагог не подошёл, мы можем заменить его: напишите, найдём другого и проведём пробное занятие бесплатно.»</p></div>
+      <div class="card"><p>8. «[Имя], понимаю ваше недовольство расписанием. Напишите в Telegram, подберём другие дни и время.»</p></div>
+      <div class="card"><p>9. «Отзыв прочитала. Подробности занятий обсуждать публично не буду, но готова разобрать ситуацию лично, напишите @evgeniakolesnik.»</p></div>
+      <div class="card"><p>10. «Спасибо, что написали. Мы не нашли среди учеников обращение с такими данными. Пожалуйста, уточните в личных сообщениях, чтобы я могла разобраться.»</p></div>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function(){
+  var box = document.getElementById('qr');
+  var input = document.getElementById('reviewUrl');
+  function render(){
+    var url = (input.value || '').trim();
+    box.innerHTML = '';
+    if(!url) return;
+    new QRCode(box, {text: url, width: 220, height: 220, correctLevel: QRCode.CorrectLevel.M});
+  }
+  input.addEventListener('input', render);
+  render();
+})();
+</script>
+</body>
+</html>

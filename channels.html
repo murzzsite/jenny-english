@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карта каналов для посевов в Telegram — JennyEnglishSchool</title>
+<meta name="description" content="Как отобрать Telegram-каналы для рекламных посевов: кого искать, критерии, калькулятор стоимости и план первой волны.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="materials.css?v=3">
+<style>
+  .calc-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 12px; }
+  .calc-box label { display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; font-weight: 600; color: var(--clr-ink-soft); }
+  .calc-box input { padding: 12px 14px; border: 1px solid var(--clr-border); border-radius: 10px; font: inherit; }
+  .calc-out { margin-top: 16px; font-size: 17px; }
+  .calc-out b { color: var(--clr-accent-dark); font-family: var(--font-head); font-size: 24px; }
+  .ph { background: #fdf1d6; padding: 1px 6px; border-radius: 6px; }
+  @media (max-width: 860px) { .calc-box { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="doc-bar">
+  <div class="doc-bar__inner">
+    <a href="report/" class="doc-bar__back">← <span>Страница проекта</span></a>
+    <div class="doc-bar__actions">
+      <button class="btn btn--primary" onclick="window.print()">Сохранить в PDF</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="doc-hero">
+    <p class="eyebrow">Карта каналов · Telegram-посевы</p>
+    <h1>Как выбрать каналы для рекламы и не заплатить за накрутку</h1>
+    <p class="doc-hero__lead">Посев — это покупка рекламного поста в чужом Telegram-канале. Здесь методика отбора, калькулятор стоимости и план первой волны на 5 каналов. Размещения оплачиваете вы отдельно, цены называют администраторы каналов. Результат посевов не гарантируем. Это платная реклама, поэтому она не связана с блокировками аккаунта за холодные сообщения.</p>
+    <p class="doc-hero__lead"><span class="draft">важно</span> Список конкретных каналов с охватом и ценами нельзя собрать честно без доступа к платным данным аналитики (Telemetr, TGStat): открыто они показывают только первые строки каталога, а числа без проверки легко оказываются накруткой. Поэтому здесь готовы критерии, калькулятор и план. Список каналов мы дозаполним, когда подключим сервисы аналитики.</p>
+    <nav class="toc">
+      <a href="#who">1. Кого искать</a>
+      <a href="#rules">2. Критерии</a>
+      <a href="#data">3. Как собрать список</a>
+      <a href="#calc">4. Калькулятор</a>
+      <a href="#wave">5. Первая волна</a>
+      <a href="#order">6. Как заказать</a>
+    </nav>
+  </section>
+
+  <section class="doc-section" id="who">
+    <h2>1. Какую аудиторию искать</h2>
+    <p class="doc-section__lead">Ваши клиенты — взрослые, которые живут за границей, и родители детей от 4 лет. Решения принимают они сами, поэтому ищем каналы, где эти люди разговаривают, а не каналы про английский вообще.</p>
+    <div class="grid-2">
+      <div class="card"><span class="tag">Брать первыми</span><p class="card__title">Русскоязычные за границей</p>
+        <p>Каналы и чаты русскоговорящих в конкретных странах и городах: переезд, жизнь, работа, документы. Здесь живёт основная аудитория.</p></div>
+      <div class="card"><span class="tag">Брать первыми</span><p class="card__title">Родители детей 4–10 лет</p>
+        <p>Каналы про детское развитие, раннее обучение, воспитание за границей и в России.</p></div>
+      <div class="card"><span class="tag">Резерв</span><p class="card__title">Подготовка к ЕГЭ</p>
+        <p>Каналы для школьников и родителей про экзамены. Аудитория сезонная: лучше перед пиком подготовки.</p></div>
+      <div class="card"><span class="tag">Не берём</span><p class="card__title">Общие каналы «про английский» и мотивацию</p>
+        <p>Большая аудитория, низкая готовность платить: многие подписались на бесплатные материалы. Брать только после теста.</p></div>
+    </div>
+  </section>
+
+  <section class="doc-section" id="rules">
+    <h2>2. Критерии отбора и признаки накрутки</h2>
+    <div class="card">
+      <ul class="ul">
+        <li><b>Охват поста к подписчикам.</b> Делите средний охват на число подписчиков. Как правило, живой канал даёт охват от 10% подписчиков. У большого канала с охватом в 1–3% аудитория в основном неактивна.</li>
+        <li><b>Рост подписчиков.</b> Резкие скачки без роста охвата и вовлечённости указывают на накрутку или закупку подписчиков.</li>
+        <li><b>Вовлечённость (ER).</b> Реакции, комментарии и пересылки в последних постах. Канал без реакций при большом охвате вызывает подозрение.</li>
+        <li><b>Рекламная нагрузка.</b> Если в ленте почти одна реклама, ваши посты теряются.</li>
+        <li><b>Цена за 1000 просмотров.</b> Считайте её в калькуляторе ниже и сравнивайте каналы между собой.</li>
+        <li><b>Тематика постов.</b> Прочитайте последние 10 постов: нужна ли такая аудитория вам, а не просто попадает ли канал в категорию.</li>
+      </ul>
+      <p class="card__note">«Не берём» ставим при подозрении на накрутку, сетях одинаковых каналов и мёртвой аудитории. «Резерв» — подходящая аудитория, но слабые показатели или высокая цена.</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="data">
+    <h2>3. Как собрать список из 30–40 каналов</h2>
+    <ol class="ul checklist" style="list-style:none;margin-left:0">
+      <li><b>Доступ к аналитике.</b> Мы подключаем сервисы Telemetr и TGStat со своей стороны, от вас ничего не требуется.</li>
+      <li><b>Поиск.</b> В каталоге ищем по запросам: русскоязычные в [страна], переезд и жизнь за границей, русские в [город], дети за границей, раннее развитие, подготовка к ЕГЭ, воспитание билингва.</li>
+      <li><b>Выгрузка.</b> Для каждого канала записываем подписчиков, средний охват поста, ER, динамику роста и цену размещения.</li>
+      <li><b>Отбор.</b> Применяем критерии из раздела 2 и делим на «брать первыми», «резерв», «не берём».</li>
+      <li><b>Проверка вручную.</b> Читаем последние 10 постов у кандидатов на первую волну и пишем администратору.</li>
+    </ol>
+    <div class="tip"><strong>Нужно от вас:</strong> страны и города, где живёт большинство ваших учеников за границей. С этого списка начнём поиск.</div>
+  </section>
+
+  <section class="doc-section" id="calc">
+    <h2>4. Калькулятор: сколько стоит 1000 просмотров</h2>
+    <p class="doc-section__lead">Введите цену размещения и средний охват поста. Чем ниже цена за 1000 просмотров, тем дешевле контакт, но смотрите и на качество аудитории.</p>
+    <div class="card">
+      <div class="calc-box">
+        <label>Цена размещения, ₽<input id="price" type="number" min="0" value="5000"></label>
+        <label>Средний охват поста<input id="reach" type="number" min="0" value="3000"></label>
+        <label>Ваш бюджет на волну, ₽<input id="budget" type="number" min="0" value="25000"></label>
+      </div>
+      <p class="calc-out">Цена за 1000 просмотров: <b id="cpm">—</b> ₽. Ожидаемые просмотры на бюджет: <b id="views">—</b>.</p>
+      <p class="card__note">Значения в полях — условный пример, не реальные цены каналов.</p>
+    </div>
+  </section>
+
+  <section class="doc-section" id="wave">
+    <h2>5. План первой волны: 5 каналов, 3 рекламных поста</h2>
+    <div class="card">
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th>№</th><th>Когда</th><th>Канал</th><th>Пост</th></tr>
+        <tr><td>1</td><td>Неделя 3, день 1</td><td><mark class="ph">[из таблицы, «брать первыми»]</mark></td><td>Пост А</td></tr>
+        <tr><td>2</td><td>Неделя 3, день 3</td><td><mark class="ph">[из таблицы, «брать первыми»]</mark></td><td>Пост Б</td></tr>
+        <tr><td>3</td><td>Неделя 3, день 5</td><td><mark class="ph">[из таблицы, «брать первыми»]</mark></td><td>Пост В</td></tr>
+        <tr><td>4</td><td>Неделя 4, день 2</td><td><mark class="ph">[из таблицы, «резерв»]</mark></td><td>Лучший из А, Б, В</td></tr>
+        <tr><td>5</td><td>Неделя 4, день 4</td><td><mark class="ph">[из таблицы, «резерв»]</mark></td><td>Лучший из А, Б, В</td></tr>
+      </table></div>
+      <p class="card__note">Принцип: сначала три разных поста в трёх каналах, потом повторяем самый результативный. Результат смотрим по числу заявок с сайта и по стоимости заявки. Метки ?start= в ссылке на бота не работают, поэтому каналы разводим по датам выхода постов.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><span class="tag">Пост А</span><p class="post">Английский после переезда: говорить, а не просто понимать
+
+Онлайн-занятия с преподавателем или носителем языка в удобное время. Первый пробный урок бесплатно, абонемент помесячно.
+
+Записаться: jennyenglishschool.ru</p></div>
+      <div class="card"><span class="tag">Пост Б</span><p class="post">Английский для ребёнка с 4 лет, без скучных правил
+
+Песни, карточки и простые диалоги. Сначала бесплатный пробный урок: ребёнок знакомится с педагогом, вы смотрите, подходит ли формат.
+
+Записаться: jennyenglishschool.ru</p></div>
+      <div class="card"><span class="tag">Пост В</span><p class="post">Сами выбираете педагога
+
+Русскоговорящий преподаватель или носитель языка, индивидуально или в группе. Оплата помесячно: 12 000 ₽ или 16 000 ₽ за 8 занятий. Первый урок бесплатно.
+
+jennyenglishschool.ru</p></div>
+    </div>
+  </section>
+
+  <section class="doc-section" id="order">
+    <h2>6. Как заказать размещение</h2>
+    <ol class="ul checklist" style="list-style:none;margin-left:0">
+      <li>Откройте контакт для рекламы в описании канала или через рекламную биржу, на которой канал зарегистрирован.</li>
+      <li>Запросите условия: цену, формат (пост, закреп, время жизни поста), статистику последних размещений.</li>
+      <li>Согласуйте текст и ссылку на сайт, договоритесь о дате и времени.</li>
+      <li>Оплачивайте только через безопасную сделку биржи или по договору. Не переводите деньги незнакомым «менеджерам» до подтверждения владельцем канала.</li>
+      <li>После выхода поста сохраните скриншот и сравните число заявок с сайта в тот же день и на следующий.</li>
+    </ol>
+  </section>
+
+</div>
+
+<script>
+document.querySelectorAll(".tbl").forEach(function(t){var h=[].map.call(t.querySelectorAll("th"),function(x){return x.textContent});if(!h.length)return;t.querySelectorAll("tr").forEach(function(r){[].forEach.call(r.children,function(c,i){if(c.tagName==="TD")c.setAttribute("data-label",h[i]||"")})})});
+(function(){
+  var p=document.getElementById('price'), r=document.getElementById('reach'), b=document.getElementById('budget');
+  var cpm=document.getElementById('cpm'), v=document.getElementById('views');
+  function fmt(n){return Math.round(n).toLocaleString('ru-RU');}
+  function calc(){
+    var pr=+p.value||0, re=+r.value||0, bu=+b.value||0;
+    if(pr>0&&re>0){cpm.textContent=fmt(pr/re*1000); v.textContent=fmt(bu/pr*re);} else {cpm.textContent='—'; v.textContent='—';}
+  }
+  [p,r,b].forEach(function(e){e.addEventListener('input',calc);}); calc();
+})();
+</script>
+</body>
+</html>
