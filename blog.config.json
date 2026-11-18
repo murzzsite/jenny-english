@@ -1,0 +1,40 @@
+{
+  "siteName": "JennyEnglishSchool",
+  "siteUrl": "https://jennyenglishschool.ru",
+  "lang": "ru",
+  "repo": "murzzsite/jenny-english",
+  "ref": "FS4WULPEF4",
+  "workerUrl": "https://lead-relay.leestygpt.workers.dev",
+  "blogTitle": "Блог",
+  "blogDescription": "Полезные статьи от JennyEnglishSchool",
+  "homeTitle": "Полезные статьи",
+  "author": {
+    "name": "JennyEnglishSchool",
+    "jobTitle": "",
+    "type": "Organization"
+  },
+  "ctaTitle": "Остались вопросы?",
+  "ctaText": "Оставьте заявку — разберём вашу ситуацию и подскажем следующий шаг.",
+  "ctaButton": "Оставить заявку",
+  "ctaUrl": "/#lead",
+  "disclaimer": "",
+  "telegramNotify": true,
+  "cadenceDays": 7,
+  "homeLatest": 3,
+  "staticPages": [
+    "/",
+    "/privacy.html"
+  ],
+  "indexNowKey": "3be663e73d9cb3ae52d019f72ac6ed7c",
+  "previewSecret": "31bcf0abc9ee24d9",
+  "theme": {
+    "accent": "var(--clr-accent)",
+    "bg": "var(--clr-bg)",
+    "surface": "var(--clr-surface)",
+    "ink": "var(--clr-ink-soft)",
+    "text": "var(--clr-text)",
+    "soft": "var(--clr-text-muted)",
+    "line": "var(--clr-border)",
+    "accent-soft": "color-mix(in srgb, var(--clr-accent) 10%, #ffffff)"
+  }
+}
