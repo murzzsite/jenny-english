@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247, 249, 252, 0.94);
+  background: rgba(255, 251, 239, 0.94);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--clr-border);
 }
@@ -86,7 +86,7 @@
 
 .say {
   border-left: 3px solid var(--clr-accent);
-  background: rgba(47, 111, 237, 0.08);
+  background: rgba(217, 63, 11, 0.08);
   border-radius: 0 10px 10px 0;
   padding: 14px 18px;
   margin: 12px 0;
@@ -131,14 +131,14 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--clr-accent-dark);
-  background: rgba(47, 111, 237, 0.1);
+  background: rgba(217, 63, 11, 0.1);
   border-radius: 999px;
   padding: 5px 12px;
   margin-bottom: 12px;
 }
 
 .tip {
-  background: rgba(255, 122, 80, 0.1);
+  background: rgba(255, 193, 46, 0.1);
   border-radius: var(--radius);
   padding: 22px 26px;
   margin-top: 24px;
@@ -181,17 +181,17 @@
 .offer:last-child { border-bottom: none; }
 .offer__name { font-weight: 600; color: var(--clr-text); }
 .offer__desc { display: block; font-weight: 400; font-size: 14px; color: var(--clr-text-muted); margin-top: 4px; }
-.offer__price { white-space: nowrap; font-family: var(--font-head); font-size: 19px; color: var(--clr-warm); }
+.offer__price { white-space: nowrap; font-family: var(--font-head); font-size: 19px; color: var(--clr-accent-dark); }
 
 .cta-final {
-  background: #16233f;
+  background: #2b1a12;
   border-radius: var(--radius);
   padding: 54px 40px;
   text-align: center;
   margin: 20px 0 70px;
 }
 .cta-final h2 { color: #fff; font-size: 30px; margin-bottom: 12px; }
-.cta-final p { color: #b9c6e6; max-width: 560px; margin: 0 auto 26px; }
+.cta-final p { color: #f3d9a8; max-width: 560px; margin: 0 auto 26px; }
 
 @media (max-width: 560px) {
   .doc-bar__actions .btn--ghost { display: none; }
