@@ -1,24 +1,20 @@
 {
   "site": "https://jennyenglishschool.ru",
   "updated": "2026-11-24",
-  "awaiting": [
-    {
-      "slug": "s-kakogo-vozrasta-angliiskii-rebenku",
-      "path": "articles/s-kakogo-vozrasta-angliiskii-rebenku.md",
-      "title": "С какого возраста начинать английский с ребёнком: игровой формат с 4 лет",
-      "description": "С какого возраста начинать английский с ребёнком, как проходят занятия с 4 лет, на что смотреть родителям и как устроен бесплатный пробный урок.",
-      "reading_time": "10 мин чтения",
-      "preview_url": "https://jennyenglishschool.ru/blog/preview/7c12126ba07e/s-kakogo-vozrasta-angliiskii-rebenku/"
-    },
+  "awaiting": [],
+  "scheduled": [
     {
       "slug": "skolko-stoit-angliiskii-onlain",
-      "path": "articles/skolko-stoit-angliiskii-onlain.md",
       "title": "Сколько стоит английский онлайн: как считать цену занятий и не переплатить",
-      "description": "Сколько стоит английский онлайн с преподавателем и носителем языка: абонементы, цена одного занятия, что входит и как не переплатить. Пробный урок бесплатно.",
-      "reading_time": "10 мин чтения",
-      "preview_url": "https://jennyenglishschool.ru/blog/preview/f6358abd6f11/skolko-stoit-angliiskii-onlain/"
+      "date": "2026-12-01"
     }
   ],
-  "scheduled": [],
-  "published": []
+  "published": [
+    {
+      "slug": "s-kakogo-vozrasta-angliiskii-rebenku",
+      "title": "С какого возраста начинать английский с ребёнком: игровой формат с 4 лет",
+      "url": "https://jennyenglishschool.ru/blog/s-kakogo-vozrasta-angliiskii-rebenku/",
+      "date": "2026-11-24"
+    }
+  ]
 }
